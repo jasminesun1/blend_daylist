@@ -26,6 +26,11 @@ After all tables have been created/updated within Snowflake, we run of files to 
 If you would like a real Spotify playlist created from the final_recommendations table, we have code for it! General disclaimer however, it may be difficult to run this code because there have been issues on Spotify's end in allowing newly created API keys to run this portion. 
 1. Run snowflake_worksheets/get_json.py. This will output a JSON formatted list of Spotify song IDs. Copy this.
 2. Navigate to the create_playlist folder. In queue.json, paste the output from step 1.
-3. In the .env file, paste in your credentials. 
-4. In your terminal, run `python playlist.py --init --name "Example playlist"`
+3. Create a .env file. The contents will look like this (replace with your own credentials):
+   ```bash
+SPOTIPY_CLIENT_ID=your_spotify_client_id
+SPOTIPY_CLIENT_SECRET=your_spotify_client_secret
+SPOTIPY_REDIRECT_URI=http://127.0.0.1:8889/callback
+```
+5. In your terminal, run `python playlist.py --init --name "Example playlist"`
 Now you have a playlist in your own account!

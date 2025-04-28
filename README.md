@@ -19,7 +19,7 @@ Run the create_stages.sql file in snowflake_worksheets. This will prepare your w
 Clean and augment our original data. Run the music_data_pipeline_full.py file in the dags folder. Create a data folder in the dags folder, and add yours/your friends' data to get recommendations on your own listening history. This will insert the normalized data tables into Snowflake. 
 
 ### Step 3: 
-Get new releases. Run the spotify.py file in the dags folder. This is scheduled to run weekly, and will update the songs table following each run. 
+Get new releases. Run the newreleases.py file in the dags folder. This is scheduled to run weekly, and will update the songs table following each run. 
 
 ### Step 4:
 After all tables have been created/updated within Snowflake, we run a few files to get our final recommendations. These files will be found in the snowflake_worksheets folder. 

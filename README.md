@@ -1,5 +1,7 @@
 # Blend Daylist
 
+Our goal for this project is to create a suggestion-based model that combines the daylists' variability of genres per day and the group listening aspect of the blend. We wanted this playlist to differ from the daylist by allowing the user to select the genre they are interested in looking at and pulling the recommendations based on that. To explore our idea and achieve our project goal, we used our listening history and Spotify's song data accessed through an API to generate playlists based on different times of day, genre, and combine the music tastes of multiple users. 
+
 Below outlines instructions for running our code. 
 
 In order to run our code, you will need Spotify Listening History (can be requested from Spotify), Snowflake account, a Snowflake connection through Airflow, LastFM API key, and Spotify API key and secret. The API keys will need to be placed in Airflow under Admin/Variables in the Airflow UI.

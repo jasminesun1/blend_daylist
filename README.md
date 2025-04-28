@@ -8,7 +8,7 @@ Airflow requirements beyond what is already installed in the provided environmen
 * install transformers (pip install transformers)
 * install torch (pip install torch)
 
-Make sure that when cloning our code, the dags folder's structure is preserved in your own Airflow folder, whether it be through a remote desktop or locally. create_playlist folder contents can be ran locally. snowflake_worksheet folder contents must be run in Snowflake as a worksheet connected to your warehouse. 
+Make sure that when cloning our code, the dags folder's structure is preserved in your own Airflow folder, whether it be through a remote desktop or locally. Path names will also need to be adjusted with your credentials. create_playlist folder contents can be ran locally. snowflake_worksheet folder contents must be run in Snowflake as a worksheet connected to your warehouse. 
 
 ### Step 1:
 Run the create_stages.sql file in snowflake_worksheets. This will prepare your warehouse for data uploads from our DAGs. 

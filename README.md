@@ -16,7 +16,7 @@ Make sure that when cloning our code, the dags folder's structure is preserved i
 Run the create_stages.sql file in snowflake_worksheets. This will prepare your warehouse for data uploads from our DAGs. 
 
 ### Step 2:
-Clean and augment our original data. Run the music_data_pipeline_full.py file in the dags folder. Add yours/your friends' data in the data folder to get recommendations on your own listening history. This will insert the normalized data tables into Snowflake. 
+Clean and augment our original data. Run the music_data_pipeline_full.py file in the dags folder. Create a data folder in the dags folder, and add yours/your friends' data to get recommendations on your own listening history. This will insert the normalized data tables into Snowflake. 
 
 ### Step 3: 
 Get new releases. Run the spotify.py file in the dags folder. This is scheduled to run weekly, and will update the songs table following each run. 
